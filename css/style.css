@@ -38,8 +38,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 24px 24px;
-  background-color: #1c1a14;
-  margin-top: -1px;
+  margin-top: -18%;
+  position: relative;
+  z-index: 1;
 }
 
 #gold-divider {
