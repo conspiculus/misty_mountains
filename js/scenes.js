@@ -47,7 +47,7 @@ const scenes = {
   6: {
     id: 6,
     images: ["images/scene6.png"],
-    storyText: "At the end of the corridor she discovers SKY DADDY, her bethrothed deep in concentration over a book of spells and incantations. In the background is the Mechanical Dragon. It hasn't flown for some but it will work this time. It'll be fine he says. Shes not so sure, and maybe she will just leave with the cats instead.",
+    storyText: "At the end of the corridor she discovers SKY DADDY, her bethrothed deep in concentration over a book of spells and incantations. In the background is the Mechanical Dragon. It hasn't flown for some but it will work this time. It'll be fine he says. Shes not so sure, and maybe she will just take the ground road instead",
     choices: [
       { label: "Go with SKYDADDY", next: 8 },
       { label: "Ignore him, take the road", next: 9 }
@@ -64,8 +64,8 @@ const scenes = {
   },
   8: {
     id: 8,
-    images: ["images/scene8.png"],
-    storyText: "The mechanical dragon is sitting in repose. it looks a little worse for wear, but SKYDADDY slaps the side of it and \"Do you have any idea how much spaghetti we could fit in this thing?!\" We will get up to the misty mountains in no time flat. They board the dragon and take to the skies. Everything is going swimmingly until a dark black cloud of soot shoots out of the dragons butt. \"I was afraid of this - looks like we're going down\" says SKYDADDY. Using his superior skills, he expertly pilots the mechanical dragon down on a windy mountain road, about halfway along the route Kelsey was going to take originally. It looks like the road is closed anyway due to a multi-horse pileup (no horses were seriously injured). Kelsey has heard rumors of a pass farther back on the route that just DROPS THEM DOWN into the mountains. Looks like they only have two options.",
+    images: ["images/scene6.png", "images/scene_8_a.png", "images/scene_8_b.png"],
+    storyText: "The mechanical dragon is sitting in repose. it looks a little worse for wear, but SKYDADDY slaps the side of it and \"Do you have any idea how much spaghetti we could fit in this thing?!\" We will get up to the misty mountains in no time flat. They board the dragon and take to the skies.|| Everything is going swimmingly until a dark black cloud of soot shoots out of the dragons butt. \"I was afraid of this - looks like we're going down\" says SKYDADDY. Using his superior skills, he expertly pilots the mechanical dragon down on a windy mountain road, about halfway along the route Kelsey was going to take originally. It looks like the road is closed anyway due to a multi-horse pileup (no horses were seriously injured).|| Kelsey has heard rumors of a pass farther back on the route that just DROPS THEM DOWN into the mountains. Looks like they only have two options.",
     choices: [
       { label: "Call the cats for help", next: 10 },
       { label: "Double back and look for the pass.", next: 11 }
