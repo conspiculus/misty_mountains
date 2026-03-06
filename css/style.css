@@ -38,16 +38,13 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 24px 24px;
-  margin-top: -18%;
+  margin-top: -36%;
   position: relative;
   z-index: 1;
 }
 
 #gold-divider {
-  width: 60%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #b8943e, #d4a843, #b8943e, transparent);
-  margin: 16px auto;
+  display: none;
 }
 
 #story-container {
