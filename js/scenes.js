@@ -28,8 +28,8 @@ const scenes = {
   },
   4: {
     id: 4,
-    images: ["images/scene4.png"],
-    storyText: "Kelsey races down to the level of gloom and doom. They call it herding cats for a reason. This is no place for fooling around. Lady Parmesean knows these corridors well, but there are terrifying creatures down here. 8 legs and Just as many eyes. Though shalt not speak their name. Just as she is about to give up, Lady Parmesean leaps from a dark passageway \"RUNNN\" she exclaims. Before she can react, it emerges THORAX - the spider queen of the deep. Kelsey turns to run, but nearly trips over her partner, and her bethrothed, SKYDADDY. He draws a bow and arrow - \"Duck\" he says. He lets the arrow loose and misses by a yard. However, the threat is enough to send THORAX back to the depths from which it came. \"Well that didn't work. Perhaps it is time to call LORD ORKIN, I hear he is running a special. Anyway, Come with me, I want to show you something\".",
+    images: ["images/scene_2_b.png", "images/scene_4_A.png", "images/scene_4_b.png"],
+    storyText: "Kelsey races down to the level of gloom and doom. They call it herding cats for a reason. This is no place for fooling around. Lady Parmesean knows these corridors well, but there are terrifying creatures down here. 8 legs and Just as many eyes. Though shalt not speak their name. || Just as she is about to give up, Lady Parmesean leaps from a dark passageway \"RUNNN\" she exclaims. Before she can react, it emerges THORAX - the spider queen of the deep. Kelsey turns to run, but nearly trips over her partner, and her bethrothed, SKYDADDY. He draws a bow and arrow || - \"Duck\" he says. He lets the arrow loose and misses by a yard. However, the threat is enough to send THORAX back to the depths from which it came. \"Well that didn't work. Perhaps it is time to call LORD ORKIN, I hear he is running a special. Anyway, Come with me, I want to show you something\".",
     choices: [
       { label: "Go With SKYDADDY", next: 8 },
       { label: "Retrieve Fivel and leave with the cats.", next: 9 }
