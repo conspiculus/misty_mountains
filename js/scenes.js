@@ -1,7 +1,7 @@
 const scenes = {
   1: {
     id: 1,
-    image: "images/title_card_9x16.png",
+    images: ["images/title_card_9x16.png"],
     storyText: "The story begins with a woman looking through a castle window across the plains to a distant mountain range. This is Kelsey, Lord Lady of the Castle Eyrie, In the Northern Wastes. The time has come for Her to return to her ancestral homeland in the Misty Mountains. Many perils await her on this journey and she will need help from her friends along the way, but first...",
     choices: [
       { label: "She chooses violence and starts the day by messing with the cats", next: 2 },
@@ -10,7 +10,7 @@ const scenes = {
   },
   2: {
     id: 2,
-    image: "images/scene2.png",
+    images: ["images/scene2.png"],
     storyText: "The cats are sleeping peacefully in the Catery by Marriot. A thought enters our beautiful heroines mind\u2026they are sleeping too peacefully\u2026 shit needs to be disturbed. \n\nShe selects to snag Lady P as she will need a scaredy-cat companion on her travels. A good agressive petting to make her eye balls nearly pop out should get her in the mood for adventure. Parm peeps in resistance and jumps out of the Lady\u2019s arms\u2026 running down stairs into the basement. Sigh, to get her back she\u2019ll need to make a detour to the level of Doom and Gloom. \n\nThe sound wakes the beast dragon Fivel, another potential companion worthy of her travels. Immediately Fivel heads for the back door, screaming at the top of her lungs to get the adventure started. Magically, the door slides open, Fivel makes a break for it.\n\nLord Lady Kelsey has no choice but to follow one of her furry friends\u2026",
     choices: [
       { label: "Side quest: Get Lady P from the basement", next: 4 },
@@ -19,7 +19,7 @@ const scenes = {
   },
   3: {
     id: 3,
-    image: "images/scene3.png",
+    images: ["images/scene3.png"],
     storyText: "She proceeds to the pantry and selects a special blend of Mocha Peppermint Caramel Cayenne Margarita. This has been specially prepared by regional alchemists. The liquid is dark and hot, but only has a faint memory of the flavor of coffee. She hears someone yell FUCK from down the corridor.",
     choices: [
       { label: "Investigate the FUCK", next: 6 },
@@ -28,7 +28,7 @@ const scenes = {
   },
   4: {
     id: 4,
-    image: "images/scene4.png",
+    images: ["images/scene4.png"],
     storyText: "Kelsey races down to the level of gloom and doom. They call it herding cats for a reason. This is no place for fooling around. Lady Parmesean knows these corridors well, but there are terrifying creatures down here. 8 legs and Just as many eyes. Though shalt not speak their name. Just as she is about to give up, Lady Parmesean leaps from a dark passageway \"RUNNN\" she exclaims. Before she can react, it emerges THORAX - the spider queen of the deep. Kelsey turns to run, but nearly trips over her partner, and her bethrothed, SKYDADDY. He draws a bow and arrow - \"Duck\" he says. He lets the arrow loose and misses by a yard. However, the threat is enough to send THORAX back to the depths from which it came. \"Well that didn't work. Perhaps it is time to call LORD ORKIN, I hear he is running a special. Anyway, Come with me, I want to show you something\".",
     choices: [
       { label: "Go With SKYDADDY", next: 8 },
@@ -37,7 +37,7 @@ const scenes = {
   },
   5: {
     id: 5,
-    image: "images/scene5.png",
+    images: ["images/scene5.png"],
     storyText: "Kelsey, knowing she can't keep up on foot, races for her trusty steed. GOBLINSHADOWHORSEYFAX and makes chase towards the neighboring castles goat pasture. When she gets there she finds fivel sitting up in a tree just out of reach. \"YOU CANT GET MEEEE\" she says. Then inexplicably comes out of the tree and gets on the horse. She doesn't make sense sometimes. Lady Parmesean, watching the scene unfold from the safety of a nearby shrubbery, saunters over. Kelsey hears more cursing in the distance, and knows that it is her bethrothed, SKYDADDY. He might have some Ideas on how to get to the misty mountains faster.",
     choices: [
       { label: "Go with SKYDADDY", next: 8 },
@@ -46,7 +46,7 @@ const scenes = {
   },
   6: {
     id: 6,
-    image: "images/scene6.png",
+    images: ["images/scene6.png"],
     storyText: "At the end of the corridor she discovers SKY DADDY, her bethrothed deep in concentration over a book of spells and incantations. In the background is the Mechanical Dragon. It hasn't flown for some but it will work this time. It'll be fine he says. Shes not so sure, and maybe she will just leave with the cats instead.",
     choices: [
       { label: "Go with SKYDADDY", next: 8 },
@@ -55,7 +55,7 @@ const scenes = {
   },
   7: {
     id: 7,
-    image: "images/scene7.png",
+    images: ["images/scene7.png"],
     storyText: "Lord Lady Kelsey enters into the courtyard and is met by her two traveling companions. The dragon cat Fivel and the Lady Parmesean. They seem bored and uniterested as usual. But Quite cute. But at the back of her mind she thinks maybe she should see what that horrible language was about. She wanders back up the corridor she discovers SKY DADDY, her bethrothed deep in concentration over a book of spells and incantations. In the background is the Mechanical Dragon. It hasn't flown for some but it will work this time. It'll be fine he says. Shes not so sure.",
     choices: [
       { label: "Go With SKYDADDY", next: 8 },
@@ -64,7 +64,7 @@ const scenes = {
   },
   8: {
     id: 8,
-    image: "images/scene8.png",
+    images: ["images/scene8.png"],
     storyText: "The mechanical dragon is sitting in repose. it looks a little worse for wear, but SKYDADDY slaps the side of it and \"Do you have any idea how much spaghetti we could fit in this thing?!\" We will get up to the misty mountains in no time flat. They board the dragon and take to the skies. Everything is going swimmingly until a dark black cloud of soot shoots out of the dragons butt. \"I was afraid of this - looks like we're going down\" says SKYDADDY. Using his superior skills, he expertly pilots the mechanical dragon down on a windy mountain road, about halfway along the route Kelsey was going to take originally. It looks like the road is closed anyway due to a multi-horse pileup (no horses were seriously injured). Kelsey has heard rumors of a pass farther back on the route that just DROPS THEM DOWN into the mountains. Looks like they only have two options.",
     choices: [
       { label: "Call the cats for help", next: 10 },
@@ -73,7 +73,7 @@ const scenes = {
   },
   9: {
     id: 9,
-    image: "images/scene9.png",
+    images: ["images/scene9.png"],
     storyText: "SKYDADDY begrudginly agrees, and they set off, Kelsey mounted on GOBLINSHADOWHORSEYFAX, and SKYDADDY, driving a strange mechanical contraption held together by magic and dreams. However, they run into problems on the road. The kings road, also known as route 285 has been sealed off by knights of the realm at mile marker 300, due to a multi - horse pile up, with no estimated time of re-opening. They could wait - but there have been rumors of a pass they could take and just DROP DOWN into the mountains.",
     choices: [
       { label: "Call the cats for help", next: 10 },
@@ -82,7 +82,7 @@ const scenes = {
   },
   10: {
     id: 10,
-    image: "images/scene10.png",
+    images: ["images/scene10.png"],
     storyText: "Kelsey recites an incantation to summon the cats. Shortly afterward, a cloud of dust can be seen in the distance town the road. As it gets closer, it's clear that it is Fivel and Lady Parmesean behind the wheel of a Hyundai. Get in Losers!",
     choices: [
       { label: "Get in the car with the cats.", next: "endingA" }
@@ -90,7 +90,7 @@ const scenes = {
   },
   11: {
     id: 11,
-    image: "images/scene11.png",
+    images: ["images/scene11.png"],
     storyText: "They double back to look for the pass. They find it, and are surpised to find Lady Parmesean Fivel sitting in a Car. \"What are you doing here?\" Asks Kelsey. \"I'm here to meet DEREK, but it looks like you guys could use a ride. Get in!\"",
     choices: [
       { label: "Get in the car with the cats.", next: "endingB" }
@@ -98,13 +98,13 @@ const scenes = {
   },
   endingA: {
     id: "endingA",
-    image: "images/endingA.png",
+    images: ["images/endingA.png"],
     storyText: "After a long and harrowing ride (Fivel is not the best driver), They finally arrive at the new castle in the Misty Mountains. They are happy to be there, and looking forward to the next adventure.",
     choices: []
   },
   endingB: {
     id: "endingB",
-    image: "images/endingB.png",
+    images: ["images/endingB.png"],
     storyText: "After a long and harrowing ride up and over the pass, the group finally arrives at their new castle in the Misty Mountains. They live happily ever after, and can't wait for the next adventure!",
     choices: []
   }
