@@ -81,3 +81,17 @@ body {
   background-color: rgba(184, 148, 62, 0.1);
   border-color: #d4a843;
 }
+
+.go-back-btn {
+  margin-top: 8px;
+  border: none;
+  color: #8a7d65;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.go-back-btn:hover {
+  color: #d4a843;
+  background-color: transparent;
+  border: none;
+}

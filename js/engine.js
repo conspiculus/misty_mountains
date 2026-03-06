@@ -6,6 +6,7 @@ let currentScene = null;
 let segments = [];
 let segmentIndex = 0;
 let textInterval = null;
+let history = [];
 
 function preloadImages(scene) {
   // Preload all images in the current scene
@@ -26,6 +27,10 @@ function preloadImages(scene) {
 function loadScene(sceneId) {
   const scene = scenes[sceneId];
   if (!scene) return;
+
+  if (currentScene) {
+    history.push(currentScene.id);
+  }
 
   currentScene = scene;
   segments = scene.storyText.split("||");
@@ -81,6 +86,20 @@ function showChoices(scene) {
     btn.addEventListener("click", () => loadScene(choice.next));
     choicesContainer.appendChild(btn);
   });
+  addGoBack();
+}
+
+function addGoBack() {
+  if (history.length === 0) return;
+  const btn = document.createElement("button");
+  btn.className = "choice-btn go-back-btn";
+  btn.textContent = "\u2190 Go Back";
+  btn.addEventListener("click", () => {
+    const prevId = history.pop();
+    currentScene = null;
+    loadScene(prevId);
+  });
+  choicesContainer.appendChild(btn);
 }
 
 // Start the game
