@@ -10,8 +10,8 @@ const scenes = {
   },
   2: {
     id: 2,
-    images: ["images/scene2.png"],
-    storyText: "The cats are sleeping peacefully in the Catery by Marriot. A thought enters our beautiful heroines mind\u2026they are sleeping too peacefully\u2026 shit needs to be disturbed. \n\nShe selects to snag Lady P as she will need a scaredy-cat companion on her travels. A good agressive petting to make her eye balls nearly pop out should get her in the mood for adventure. Parm peeps in resistance and jumps out of the Lady\u2019s arms\u2026 running down stairs into the basement. Sigh, to get her back she\u2019ll need to make a detour to the level of Doom and Gloom. \n\nThe sound wakes the beast dragon Fivel, another potential companion worthy of her travels. Immediately Fivel heads for the back door, screaming at the top of her lungs to get the adventure started. Magically, the door slides open, Fivel makes a break for it.\n\nLord Lady Kelsey has no choice but to follow one of her furry friends\u2026",
+    images: ["images/scene_2_a.png", "images/scene_2_b.png", "images/scene_2_c.png"],
+    storyText: "The cats are sleeping peacefully in the Catery by Marriot. A thought enters our beautiful heroines mind\u2026they are sleeping too peacefully\u2026 shit needs to be disturbed.\n\nShe selects to snag Lady P as she will need a scaredy-cat companion on her travels. A good agressive petting to make her eye balls nearly pop out should get her in the mood for adventure. Parm peeps in resistance and jumps out of || the Lady\u2019s arms\u2026 running down stairs into the basement. Sigh, to get her back she\u2019ll need to make a detour to the level of Doom and Gloom.\n\nThe sound wakes the beast dragon Fivel, another potential companion worthy of her travels. Immediately Fivel heads for the back door,|| screaming at the top of her lungs to get the adventure started. Magically, the door slides open, Fivel makes a break for it.\n\nLord Lady Kelsey has no choice but to follow one of her furry friends\u2026",
     choices: [
       { label: "Side quest: Get Lady P from the basement", next: 4 },
       { label: "Follow Fivel and get this voyage in gear", next: 5 }

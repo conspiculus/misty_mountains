@@ -4,14 +4,17 @@
     "images": ["title_card_9x16.png"],
     "storyText": "The story begins with a woman looking through a castle window across the plains to a distant mountain range. This is Kelsey, Lord Lady of the Castle Eyrie, In the Northern Wastes. The time has come for Her to return to her ancestral homeland in the Misty Mountains. Many perils await her on this journey and she will need help from her friends along the way, but first...",
     "choices": [
-      { "label": "She chooses violence and starts the day by messing with the cats", "next": 2 },
+      {
+        "label": "She chooses violence and starts the day by messing with the cats",
+        "next": 2
+      },
       { "label": "She makes an outrageously flavored coffee", "next": 3 }
     ]
   },
   {
     "id": 2,
-    "images": ["scene2.png"],
-    "storyText": "The cats are sleeping peacefully in the Catery by Marriot. A thought enters our beautiful heroines mind\u2026they are sleeping too peacefully\u2026 shit needs to be disturbed.\n\nShe selects to snag Lady P as she will need a scaredy-cat companion on her travels. A good agressive petting to make her eye balls nearly pop out should get her in the mood for adventure. Parm peeps in resistance and jumps out of the Lady\u2019s arms\u2026 running down stairs into the basement. Sigh, to get her back she\u2019ll need to make a detour to the level of Doom and Gloom.\n\nThe sound wakes the beast dragon Fivel, another potential companion worthy of her travels. Immediately Fivel heads for the back door, screaming at the top of her lungs to get the adventure started. Magically, the door slides open, Fivel makes a break for it.\n\nLord Lady Kelsey has no choice but to follow one of her furry friends\u2026",
+    "images": ["scene_2_a.png", "scene_2_b.png", "scene_2_c.png"],
+    "storyText": "The cats are sleeping peacefully in the Catery by Marriot. A thought enters our beautiful heroines mind\u2026they are sleeping too peacefully\u2026 shit needs to be disturbed.\n\nShe selects to snag Lady P as she will need a scaredy-cat companion on her travels. A good agressive petting to make her eye balls nearly pop out should get her in the mood for adventure. Parm peeps in resistance and jumps out of || the Lady\u2019s arms\u2026 running down stairs into the basement. Sigh, to get her back she\u2019ll need to make a detour to the level of Doom and Gloom.\n\nThe sound wakes the beast dragon Fivel, another potential companion worthy of her travels. Immediately Fivel heads for the back door,|| screaming at the top of her lungs to get the adventure started. Magically, the door slides open, Fivel makes a break for it.\n\nLord Lady Kelsey has no choice but to follow one of her furry friends\u2026",
     "choices": [
       { "label": "Side quest: Get Lady P from the basement", "next": 4 },
       { "label": "Follow Fivel and get this voyage in gear", "next": 5 }
@@ -84,17 +87,13 @@
     "id": 10,
     "images": ["scene10.png"],
     "storyText": "Kelsey recites an incantation to summon the cats. Shortly afterward, a cloud of dust can be seen in the distance town the road. As it gets closer, it's clear that it is Fivel and Lady Parmesean behind the wheel of a Hyundai. Get in Losers!",
-    "choices": [
-      { "label": "Get in the car with the cats.", "next": "endingA" }
-    ]
+    "choices": [{ "label": "Get in the car with the cats.", "next": "endingA" }]
   },
   {
     "id": 11,
     "images": ["scene11.png"],
     "storyText": "They double back to look for the pass. They find it, and are surpised to find Lady Parmesean Fivel sitting in a Car. \"What are you doing here?\" Asks Kelsey. \"I'm here to meet DEREK, but it looks like you guys could use a ride. Get in!\"",
-    "choices": [
-      { "label": "Get in the car with the cats.", "next": "endingB" }
-    ]
+    "choices": [{ "label": "Get in the car with the cats.", "next": "endingB" }]
   },
   {
     "id": "endingA",
