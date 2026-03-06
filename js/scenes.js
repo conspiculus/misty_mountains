@@ -1,7 +1,7 @@
 const scenes = {
   1: {
     id: 1,
-    image: "images/scene1.png",
+    image: "images/title_card_9x16.png",
     storyText: "The story begins with a woman looking through a castle window across the plains to a distant mountain range. This is Kelsey, Lord Lady of the Castle Eyrie, In the Northern Wastes. The time has come for Her to return to her ancestral homeland in the Misty Mountains. Many perils await her on this journey and she will need help from her friends along the way, but first...",
     choices: [
       { label: "She chooses violence and starts the day by messing with the cats", next: 2 },
