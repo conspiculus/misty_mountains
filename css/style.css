@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  font-family: Georgia, 'Times New Roman', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#game-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+}
+
+#image-container {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#scene-image {
+  width: 100%;
+  display: block;
+}
+
+#story-container {
+  margin-bottom: 24px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+#story-text {
+  white-space: pre-wrap;
+}
+
+#choices-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.choice-btn {
+  background-color: #16213e;
+  color: #e0e0e0;
+  border: 1px solid #0f3460;
+  padding: 14px 20px;
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.choice-btn:hover {
+  background-color: #0f3460;
+  border-color: #e94560;
+}
