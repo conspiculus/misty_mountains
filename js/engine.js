@@ -5,7 +5,6 @@ const choicesContainer = document.getElementById("choices-container");
 let currentScene = null;
 let segments = [];
 let segmentIndex = 0;
-let textInterval = null;
 let history = [];
 
 function preloadImages(scene) {
@@ -45,37 +44,34 @@ function showSegment() {
   const scene = currentScene;
   const imgSrc = scene.images[segmentIndex] || scene.images[scene.images.length - 1];
   imageEl.src = imgSrc;
-  storyTextEl.textContent = "";
   choicesContainer.innerHTML = "";
 
-  if (textInterval) clearInterval(textInterval);
+  // Reset fade
+  storyTextEl.classList.remove("visible");
+  storyTextEl.textContent = segments[segmentIndex];
 
-  const text = segments[segmentIndex];
-  let charIndex = 0;
+  // Trigger fade-in on next frame
+  requestAnimationFrame(() => {
+    storyTextEl.classList.add("visible");
+  });
 
-  textInterval = setInterval(() => {
-    storyTextEl.textContent += text[charIndex];
-    charIndex++;
-    if (charIndex >= text.length) {
-      clearInterval(textInterval);
-      textInterval = null;
-
-      if (segmentIndex < segments.length - 1) {
-        // More segments — show a "continue" tap target
-        const btn = document.createElement("button");
-        btn.className = "choice-btn";
-        btn.textContent = "Continue...";
-        btn.addEventListener("click", () => {
-          segmentIndex++;
-          showSegment();
-        });
-        choicesContainer.appendChild(btn);
-      } else {
-        // Final segment — show choices
-        showChoices(scene);
-      }
+  // Show buttons after the fade completes
+  const afterFade = () => {
+    if (segmentIndex < segments.length - 1) {
+      const btn = document.createElement("button");
+      btn.className = "choice-btn";
+      btn.textContent = "Continue...";
+      btn.addEventListener("click", () => {
+        segmentIndex++;
+        showSegment();
+      });
+      choicesContainer.appendChild(btn);
+    } else {
+      showChoices(scene);
     }
-  }, 30);
+  };
+
+  storyTextEl.addEventListener("transitionend", afterFade, { once: true });
 }
 
 function showChoices(scene) {
