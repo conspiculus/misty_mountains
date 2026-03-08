@@ -46,14 +46,13 @@ function showSegment() {
   imageEl.src = imgSrc;
   choicesContainer.innerHTML = "";
 
-  // Reset fade
+  // Reset fade and force reflow so the browser registers the reset
   storyTextEl.classList.remove("visible");
   storyTextEl.textContent = segments[segmentIndex];
+  void storyTextEl.offsetHeight;
 
-  // Trigger fade-in on next frame
-  requestAnimationFrame(() => {
-    storyTextEl.classList.add("visible");
-  });
+  // Trigger fade-in
+  storyTextEl.classList.add("visible");
 
   // Show buttons after the fade completes
   const afterFade = () => {
