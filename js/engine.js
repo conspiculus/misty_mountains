@@ -32,7 +32,7 @@ function loadScene(sceneId) {
   }
 
   currentScene = scene;
-  segments = scene.storyText.split("||");
+  segments = scene.storyText.split("||").map(s => s.trim());
   segmentIndex = 0;
 
   choicesContainer.innerHTML = "";
