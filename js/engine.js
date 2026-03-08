@@ -54,8 +54,8 @@ function showSegment() {
   // Trigger fade-in
   storyTextEl.classList.add("visible");
 
-  // Show buttons after the fade completes
-  const afterFade = () => {
+  // Show buttons after the 1s fade completes
+  setTimeout(() => {
     if (segmentIndex < segments.length - 1) {
       const btn = document.createElement("button");
       btn.className = "choice-btn";
@@ -68,9 +68,7 @@ function showSegment() {
     } else {
       showChoices(scene);
     }
-  };
-
-  storyTextEl.addEventListener("transitionend", afterFade, { once: true });
+  }, 1000);
 }
 
 function showChoices(scene) {
