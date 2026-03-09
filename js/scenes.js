@@ -82,7 +82,7 @@ const scenes = {
   },
   10: {
     id: 10,
-    images: ["images/scene10.png"],
+    images: ["images/cats_car_driving_9x16.png"],
     storyText: "Kelsey recites an incantation to summon the cats. Shortly afterward, a cloud of dust can be seen in the distance town the road. As it gets closer, it's clear that it is Fivel and Lady Parmesean behind the wheel of a Hyundai. Get in Losers!",
     choices: [
       { label: "Get in the car with the cats.", next: "endingA" }
@@ -90,8 +90,8 @@ const scenes = {
   },
   11: {
     id: 11,
-    images: ["images/scene11.png"],
-    storyText: "They double back to look for the pass. They find it, and are surpised to find Lady Parmesean Fivel sitting in a Car. \"What are you doing here?\" Asks Kelsey. \"I'm here to meet DEREK, but it looks like you guys could use a ride. Get in!\"",
+    images: ["images/cats_parked_car_9x16.png"],
+    storyText: "They double back to look for the pass. They find it, and are surpised to find Lady Parmesean and  Fivel sitting in a Car. \"What are you doing here?\" Asks Kelsey. \"I'm here to meet DEREK, but it looks like you guys could use a ride. Get in!\"",
     choices: [
       { label: "Get in the car with the cats.", next: "endingB" }
     ]
