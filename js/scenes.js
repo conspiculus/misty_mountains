@@ -73,7 +73,7 @@ const scenes = {
   },
   9: {
     id: 9,
-    images: ["images/scene9.png"],
+    images: ["images/road_closed_9x16.png"],
     storyText: "SKYDADDY begrudginly agrees, and they set off, Kelsey mounted on GOBLINSHADOWHORSEYFAX, and SKYDADDY, driving a strange mechanical contraption held together by magic and dreams. However, they run into problems on the road. The kings road, also known as route 285 has been sealed off by knights of the realm at mile marker 300, due to a multi - horse pile up, with no estimated time of re-opening. They could wait - but there have been rumors of a pass they could take and just DROP DOWN into the mountains.",
     choices: [
       { label: "Call the cats for help", next: 10 },
@@ -98,13 +98,13 @@ const scenes = {
   },
   endingA: {
     id: "endingA",
-    images: ["images/endingA.png"],
+    images: ["images/arriving_9x16.png"],
     storyText: "After a long and harrowing ride (Fivel is not the best driver), They finally arrive at the new castle in the Misty Mountains. They are happy to be there, and looking forward to the next adventure.",
     choices: []
   },
   endingB: {
     id: "endingB",
-    images: ["images/endingB.png"],
+    images: ["images/arriving_9x16.png"],
     storyText: "After a long and harrowing ride up and over the pass, the group finally arrives at their new castle in the Misty Mountains. They live happily ever after, and can't wait for the next adventure!",
     choices: []
   }
